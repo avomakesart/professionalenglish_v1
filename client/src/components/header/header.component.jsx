@@ -8,8 +8,7 @@ import {
   HeaderContent,
   LogoContainer,
   Nav,
-  NavLink,
-
+  NavLink
 } from "./header.styles";
 
 const Header = () => {
@@ -31,8 +30,9 @@ const Header = () => {
               {!isAuthenticated && (
                 <NavLink onClick={() => loginWithRedirect({})}>Log in</NavLink>
               )}
-
+              {isAuthenticated && (
               <NavLink to="/perfil">Perfil</NavLink>
+              )}
               {isAuthenticated && (
                 <NavLink onClick={() => logout()}>Log out</NavLink>
               )}

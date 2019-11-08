@@ -51,6 +51,7 @@ handleSubmit(e) {
      }
     render() {
         return (
+          <>
                     <form
                     onSubmit={this.handleSubmit.bind(this)}
                     style={{margin:'0 auto', width:'50%'}}>
@@ -99,6 +100,7 @@ handleSubmit(e) {
                             <button type="submit" className="sendButton">Enviar</button>
                         </div>
                     </form>
+                    </>
                 )
               }
             }

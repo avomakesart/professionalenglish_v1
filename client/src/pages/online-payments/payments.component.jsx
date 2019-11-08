@@ -10,7 +10,7 @@ const Checkout = () => {
     return (
       <>
      <hr />
-      <StripeProvider apiKey="pk_live_UXYTTYUMzgoU5EtSIPgvyIef00xzKAiPY0">
+      <StripeProvider apiKey="pk_test_CcwKXSFozLzZApyXMe1KNzPp00TwwGze02">
       <Container>
       <Elements>
         <CheckoutForm />

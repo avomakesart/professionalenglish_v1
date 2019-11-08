@@ -100,3 +100,36 @@ export const Button = styled.a`
     color: white;
   `}
 `
+
+export const ButtonHero = styled.a`
+  /* This renders the buttons above... Edit me! */
+  display: flex;
+  border-radius: 3px;
+  justify-content:center;
+  width: 5rem;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin:  auto;
+  margin-top: 3rem;
+  text-decoration: none;
+  padding: 0.78571429em 1.5em 0.78571429em;
+  @media (min-width: 768px) {
+        margin: 0 8rem;
+        margin-top: 3rem;
+        display: flex;
+        justify-content:left;
+    }
+
+  /* The GitHub button is a primary button
+   * edit this to target it specifically! */
+  ${props => props.primary && css`
+    background-color: #FBBD08;
+    color: white;
+  `}
+  ${props => props.dark && css`
+    background-color: #191919;
+    color: white;
+  `}
+  `;

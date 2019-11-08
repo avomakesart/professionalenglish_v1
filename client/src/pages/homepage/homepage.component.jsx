@@ -19,7 +19,8 @@ import { SiteHeader } from '../../components/header/header.styles';
 
 import {
     HeroText,
-    HeroSubText
+    HeroSubText,
+    ButtonHero
 } from '../../components/hero/hero.styles';
 
 // Images
@@ -39,14 +40,15 @@ const HomePage = () => {
             <HeroSubText>
                 Conoce tu nivel de Inglés
             </HeroSubText>
-            <Button
+            <ButtonHero
               href="https://docs.google.com/forms/d/e/1FAIpQLSeCFiGCMqhOAxT5_CESYTtKa_BKQLNJoXN2SZd8Bk1e4MFUCA/viewform"
               target="_blank"
               rel="noopener"
               primary
+              style={{margin: '2rem, 8rem!important'}}
             >
             Comienza
-            </Button>
+            </ButtonHero>
         </SiteHeader>
             <Container>
             <hr />

@@ -36,9 +36,11 @@ export const Button = styled.a`
   margin-top: 3rem;
   text-decoration: none;
   padding: 0.78571429em 1.5em 0.78571429em;
-  @media (min-width: 768px) {
-        margin: 0 8rem;
+  @media (min-width: 768px) {
+    margin: 0 auto;
         margin-top: 3rem;
+        display: flex;
+        justify-content:left;
     }
 
   /* The GitHub button is a primary button
